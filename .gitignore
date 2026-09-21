@@ -8,3 +8,5 @@ __pycache__/
 .runtime/
 artifacts/
 .DS_Store
+node_modules/
+integrations/dashboard/dist/

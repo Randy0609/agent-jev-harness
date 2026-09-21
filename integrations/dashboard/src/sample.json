@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "data_class": "synthetic",
+  "title": "经营日报 · 合成数据演示",
+  "generated": true,
+  "checked": true,
+  "sent": false,
+  "target_visible": false,
+  "evidence": [
+    {
+      "label": "模拟金额核对",
+      "status": "passed",
+      "detail": "100 + 200 = 300；独立 Python 进程退出码 0"
+    },
+    {
+      "label": "Canny 执行台账",
+      "status": "passed",
+      "detail": "调用上游 ledger.summarize，检查发生在产物记录之后"
+    },
+    {
+      "label": "真实业务数据覆盖",
+      "status": "missing",
+      "detail": "本例只使用合成数据，没有接入业务系统"
+    },
+    {
+      "label": "发送与目标回读",
+      "status": "missing",
+      "detail": "未执行发送，也没有目标端回执"
+    }
+  ],
+  "batch": [
+    {
+      "id": "S1",
+      "route": "match",
+      "probability": 0.97
+    },
+    {
+      "id": "S2",
+      "route": "no_match",
+      "probability": 0.12
+    },
+    {
+      "id": "S3",
+      "route": "review",
+      "probability": 0.8
+    }
+  ],
+  "batch_model": "MOCK-no-network"
+}

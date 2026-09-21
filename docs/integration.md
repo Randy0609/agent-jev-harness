@@ -4,7 +4,7 @@
 
 登录 [TypeSafe 控制台的 API Keys 页面](https://console.typesafe.ai/keys)，创建并保存自己的 Key，查看账户额度和当前计费要求。官方入口来自 [Quick start](https://docs.typesafe.ai/introduction/quickstart)。
 
-如使用中转站，需要其 API Key、接口地址、可用模型名称及协议文档。当前 `core.py` 的请求地址固定为 `https://api.typesafe.ai/v1/systemone`，没有自定义 endpoint 环境变量；尚未适配或验证任何中转站。仅替换 Key 无法完成中转接入。适配时须核对请求、鉴权和返回结构，并单独验证数据流向。
+本页介绍原有核心工具：`core.py` 仍固定连接 TypeSafe，没有自定义 endpoint 环境变量。新增的可选组件提供 TypeSafe / OpenRouter 路由，见[五组件接入指南](five-integrations.md)；官方路线已实测，OpenRouter 路线待实测。两套入口的凭据、限额和数据边界不同，请勿混用。
 
 不要将 Key 写入仓库或公开对话。下面两种凭据方式任选一种；本项目不会自动创建供应商账户或领取 Key。离线演示与核心测试不需要凭据。
 

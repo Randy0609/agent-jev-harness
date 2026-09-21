@@ -1,0 +1,12 @@
+[submodule "integrations/upstream/canny"]
+	path = integrations/upstream/canny
+	url = https://github.com/qkal/Canny.git
+[submodule "integrations/upstream/typesafe-mcp"]
+	path = integrations/upstream/typesafe-mcp
+	url = https://github.com/itsmostafa/typesafe-mcp.git
+[submodule "integrations/upstream/jev-mcp"]
+	path = integrations/upstream/jev-mcp
+	url = https://github.com/jkudish/jev-mcp.git
+[submodule "integrations/upstream/semdecide"]
+	path = integrations/upstream/semdecide
+	url = https://github.com/sharziki/semdecide.git
