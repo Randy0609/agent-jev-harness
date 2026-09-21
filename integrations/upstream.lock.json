@@ -1,0 +1,38 @@
+{
+  "canny": {
+    "repo": "qkal/Canny",
+    "commit": "d927d2606b07ce990fa4bef8908a27d8d32db1e1",
+    "license": "MIT"
+  },
+  "typesafe-mcp": {
+    "repo": "itsmostafa/typesafe-mcp",
+    "commit": "d4c110c7edd82127a4ca962c9d60fb96f748eb6e",
+    "license": "MIT",
+    "release": "v0.4.2",
+    "assets": {
+      "evaluate-darwin-amd64.tar.gz": "0b03fcbf2bc07129f9b4e48779acbd3150f146fb1e432534f2ac3c676054d82b",
+      "evaluate-darwin-arm64.tar.gz": "cbcef600659d11019e689a9a45236396350a866b082e7abb4ea536060b853c17",
+      "evaluate-linux-amd64.tar.gz": "dffec9ce534cc7ddb9497f7ac43e65216bc9f1d56743534678f3ed7081f26799",
+      "evaluate-linux-arm64.tar.gz": "590a6cd519c6e3b108ce73bf64434757bbe23cc9345b25b491f041a0ac23a946"
+    }
+  },
+  "jev-mcp": {
+    "repo": "jkudish/jev-mcp",
+    "commit": "42aa7ff79cc2b269f1f1a6893fe6e027a166fed7",
+    "license": "MIT"
+  },
+  "semdecide": {
+    "repo": "sharziki/semdecide",
+    "commit": "33cf5c03c50e02e59df3f3ea81f0650f6b791545",
+    "license": "MIT"
+  },
+  "json-render": {
+    "repo": "vercel-labs/json-render",
+    "version": "0.21.0",
+    "license": "Apache-2.0",
+    "packages": [
+      "@json-render/core",
+      "@json-render/react"
+    ]
+  }
+}

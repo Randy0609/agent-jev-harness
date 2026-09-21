@@ -1,0 +1,21 @@
+name: upstream integrations
+on: [push, pull_request]
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: python -m pip install -r requirements.lock
+      - run: python -m integrations.kit setup all
+      - run: python -m unittest -v
+      - run: python -m integrations.verify --output artifacts/integrations-offline.json
+      - run: python -m integrations.demo
+      - run: npm test --prefix integrations/dashboard
