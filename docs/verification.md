@@ -18,6 +18,17 @@
 
 原始本地调用记录在被忽略的 `artifacts/mcp-live.json`；不随源码压缩包发布。可以运行 `python verify_mcp.py --live --output artifacts/mcp-live.json` 自行复现；之后返回值可能变化。
 
-尚未验证：真实企业任务收益、长期概率校准、其他品牌宿主自动加载、Windows、Linux 或 CI 执行。CI 配置包含 Python 3.11–3.13 的离线检查，但没有在远端运行，不将配置文件视为 CI 已通过。
+尚未验证：真实企业任务收益、长期概率校准、其他品牌宿主自动加载、Windows，以及 Linux 上的真实 API / MCP 接入。Linux 上的核心离线测试和演示已通过，见下方公开发布核验。
 
 本节记录本地初版的验证结果。公开仓库为 [Randy0609/agent-jev-harness](https://github.com/Randy0609/agent-jev-harness)；远端 CI 结果请查阅仓库 Actions，不以本地测试代替。
+
+## 公开发布核验
+
+2026-09-21，首个公开提交 `cbf07ef3276f75d87962dbca15327c32659fe603` 已完成以下检查：
+
+- GitHub API 返回仓库可见性为 PUBLIC。
+- 从 GitHub 无需登录下载该提交的源码，24 个文件逐一与本地提交内容一致。
+- 解压到临时目录后，17 项核心测试和离线演示均通过。
+- GitHub Actions 的 Ubuntu 环境中，Python 3.11、3.12、3.13 三组核心测试与离线演示全部成功。[查看该次 CI](https://github.com/Randy0609/agent-jev-harness/actions/runs/35566750815)。
+
+本记录只证明发布文件与所列检查结果，不代表企业业务效果已验证。后续版本的 CI 状态以各自提交关联的运行记录为准。
