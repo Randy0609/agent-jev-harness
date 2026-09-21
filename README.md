@@ -2,6 +2,10 @@
 
 **给你的 AI 助手一套可检查的工作流程。**
 
+[![Agent + JEV Harness 工作流程：老板定要求，Agent 干活，程序核对事实、JEV 辅助判断，老板查看结果与依据。](docs/images/agent-jev-harness-randy-overview.png)](docs/images/agent-jev-harness-randy-overview.png)
+
+*一图了解项目：点击图片可查看原图。*
+
 如果你已经让 AI 做日报、查资料、整理客户需求或制作方案，你可能也有这样的困惑：
 
 “它看起来什么都懂，为什么最后还是要我一项项检查？”
