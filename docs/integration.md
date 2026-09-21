@@ -1,6 +1,14 @@
 # 技术接入
 
-## 安装与配置
+## 第一步：获取 API Key
+
+登录 [TypeSafe 控制台的 API Keys 页面](https://console.typesafe.ai/keys)，创建并保存自己的 Key，查看账户额度和当前计费要求。官方入口来自 [Quick start](https://docs.typesafe.ai/introduction/quickstart)。
+
+如使用中转站，需要其 API Key、接口地址、可用模型名称及协议文档。当前 `core.py` 的请求地址固定为 `https://api.typesafe.ai/v1/systemone`，没有自定义 endpoint 环境变量；尚未适配或验证任何中转站。仅替换 Key 无法完成中转接入。适配时须核对请求、鉴权和返回结构，并单独验证数据流向。
+
+不要将 Key 写入仓库或公开对话。下面两种凭据方式任选一种；本项目不会自动创建供应商账户或领取 Key。离线演示与核心测试不需要凭据。
+
+## 第二步：安装与配置
 
 Python 3.11+；离线演示和核心测试只用标准库。MCP/CLI 需要 `requirements.txt` 中的依赖。建议使用独立虚拟环境，避免更改已有 Agent 服务。
 
