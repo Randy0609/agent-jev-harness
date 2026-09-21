@@ -1,0 +1,5 @@
+{
+  "goal": "Generate a synthetic daily operations report and deliver it to a test recipient.",
+  "context": "All source rows are synthetic. The agent must check totals and delivery receipts. This example does not authorize any real message.",
+  "data_class": "synthetic"
+}

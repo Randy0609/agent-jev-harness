@@ -1,0 +1,16 @@
+{
+  "goal": "Generate a synthetic daily operations report and deliver it to a test recipient.",
+  "data_class": "synthetic",
+  "claims": [
+    {
+      "claim": "The report file was generated.",
+      "evidence": "In this fictional scenario, a filesystem read returned the generated report and checked totals.",
+      "evidence_status": "observed"
+    },
+    {
+      "claim": "The report was delivered to the recipient.",
+      "evidence": "Only a sending plan exists. There is no send response or recipient-side readback.",
+      "evidence_status": "missing"
+    }
+  ]
+}
